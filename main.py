@@ -13,36 +13,20 @@ token = "7328640668:AAEsU8BL-vgYGVr9mwoAAj63UduZ57fzh-M" # توكنك
 id = "1451542769" # ايديك
 
 def usernames():
-    t = ''.join(choice('t') for i in range(1)) 
-    b = ''.join(choice('b') for i in range(1)) 
-    k = ''.join(choice('qwertyuiopasdfghjklzxcvbnm') for i in range(1))
-    n = ''.join(choice('qwertyuiopasdfghjklzxcvbnm1234567890') for i in range(1))
-    c = ''.join(choice('qwertyuiopasdfghjklzxcvbnm1234567890') for i in range(1))
-    z = ''.join(choice('qwertyuiopasdfghjklzxcvbnm1234567890') for i in range(1))
-    g = ''.join(choice('qwertyuiopasdfghjklzxcvbnm1234567890') for i in range(1))
-    o = ''.join("o") for i in range(1)) 
-    e = ''.join(choice('qwertyuiopasdfghjklzxcvbnm') for i in range(1))
-    u1 = k + k + z + e + e
-    u2 = k + z + e + b + o + t
-    u3 = k + k + k + n + b + o + t
-    u4 = n + n + n + k + b + o + t
-    u5 = k + k + n + n + b + o + t
-    u6 = n + c + n + c + n + n + n + n
-    u7 = n + c + n + c + c + c + c + c
-    u8 = n + n + n + k + k + k + k + n 
-    u9 = n + n + k + k + k + k + k + k
-    u10 = n + k + n + n + n + k + n
-    u11 = k + n + n + n + n + n + k
-    u12 = k + n + k + n + k + n + k
-    u13 = k + k + k + k + k + n + n
-    u14 = k + k + k + k + k + k + k + n
-    u15 = n + k + k + k + k + k + k + k
-    u16 = n + n + n + n + k + k + k + k
-    u17 = n + n + k + k + k + k + k + k
-    u18 = k + k + k + n + n + k + k + k
-    s = u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15,u16,u17,u18
-    return choice(s)
-
+    bot = ''.join(choice('bot') for i in range(1)) 
+      k = ''.join(choice('qwertyuiopasdfghjklzxcvbnm') for i in range(1)) 
+      x = ''.join(choice('123456789') for i in range(1)) 
+      e = ''.join(choice('qwertyuiopasdfghjklzxcvbnm123456789') for i in range(1)) 
+      c = ''.join(choice('qwertyuiopasdfghjklzxcvbnm123456789') for i in range(1)) 
+      u1 = k + c + x + x + x + x
+      u2 = k + e + x + x + x + x
+      u3 = k + k + k + k + k + e + e
+      u4 = e + e + k + k + k + k + k
+      u5 = k + k + k + e + k + k + k
+      u6 = k + k + e + c + c
+      u7 = k + k + k + c + c + k + k
+      u8 = k + k + c + c + bot
+      u9 = k + k + k + c + bot
 async def channels2(client, username):
     async for chat in client.iter_dialogs():
         if chat.name == f'[ {username} ]' and not chat.entity.username:
